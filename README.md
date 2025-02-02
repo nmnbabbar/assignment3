@@ -1,6 +1,4 @@
-# Assignment-3
-Topsis-for-pretrained-model
-# TOPSIS-Based Selection of Pretrained Text Generation Models
+# Topsis for Pre-trained Models
 
 This repository contains a Python implementation of the **TOPSIS (Technique for Order of Preference by Similarity to Ideal Solution)** method to evaluate and rank pretrained text generation models. The goal is to identify the best-performing model based on multiple criteria such as **Coherence**, **Fluency**, **Relevance**, and **Perplexity**.
 
@@ -8,12 +6,8 @@ This repository contains a Python implementation of the **TOPSIS (Technique for 
 - [Introduction](#introduction)
 - [Models Evaluated](#models-evaluated)
 - [Evaluation Criteria](#evaluation-criteria)
-- [Installation](#installation)
 - [Usage](#usage)
 - [Results](#results)
-- [Visualization](#visualization)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 Selecting the best pretrained model for text generation can be challenging due to the variety of metrics involved. This project uses the TOPSIS method to simplify the decision-making process by ranking models based on how close they are to an ideal solution.
@@ -33,28 +27,11 @@ The models are assessed based on the following criteria:
 3. **Relevance**: Alignment with the prompt or context.
 4. **Perplexity**: A measure of how well the model predicts the next word (lower is better).
 
-## Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/NishchayJindal/topsis-text-generation.git
-    cd topsis-text-generation
-    ```
-
-2. Create a virtual environment (optional but recommended):
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows use `venv\Scripts\activate`
-    ```
-
-3. Install the required libraries:
-    ```bash
-    pip install numpy pandas matplotlib scikit-learn
-    ```
 
 ## Usage
-Run the script to evaluate and rank the models:
+Install the libraries and run the jupyter notebook
 ```bash
-python topsis_model_selection.py
+    %pip install numpy pandas matplotlib
 ```
 
 The script performs the following steps:
@@ -76,29 +53,11 @@ The output will display the TOPSIS scores and ranks for each model in a tabular 
 3       GPT-NEO          8        8          7          17      0.334709     5
 ```
 
-## Visualization
-The script generates the following visualizations:
-1. **TOPSIS Scores Bar Chart:** Visualizes the TOPSIS scores of all models.
-2. **Model Rankings Bar Chart:** Displays the rank of each model (Rank 1 being the best).
 
-### Example Plots
-- **TOPSIS Scores:**
-![TOPSIS Scores](./Topsis-Score.png)
+**Author:** Naman Babbar
+**Roll Number:** 102216116
 
-- **Model Rankings:**
-![Model Rankings](./Model_ranking.png)
-
-## Contributing
-Contributions are welcome! If you have suggestions or improvements, feel free to fork the repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License.
-
----
-
-**Author:** Nishchay Jindal 
-
-**Contact:** [njindal_be22@thapar.edu](mailto:njindal_be22@thapar.edu)
+**Contact:** [nbabbar_be22@thapar.edu](mailto:nbabbar_be22@thapar.edu)
 
 
 ---
